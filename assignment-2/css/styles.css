@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* Notes for overall page
+- The music video uses a comic book style animation. Starts very colourful, until about the 3rd verse and then it becomes tan/white/black with red.
+- Music moves from light and carefree to aggressive and angry. Outro is light after a very aggressive final verse.
+- Video implies one of the two main characters dies because of an order from the other main character.
+- Lyrics follow the same as the music.
+- Put different emphasis on positive and negative lyrics.
+- Have the page gradient from light and colourful to dark/bland + red.
+- Adjust line length to match the actual HTML line length.
+- Adjust text-align to have lyrics be the center of the page
+- Include images from the music video.
+- Include the music video. https://www.youtube.com/watch?v=HLUX0y4EptA
+ */
+html{
+    background-image: linear-gradient(rgba(166, 216, 72, 0.56), rgba(87, 23, 23, 0.7) 60%, dimgrey, black);
+    text-align: center;
+}
+.lyrics{
+    text-align: center; /*aligning the entire lyrics box to the center of the page*/
+}
+/*Font for everything but the lyrics*/
+.sectionHeadings, body h1, h2, h3 {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/*Happy class font*/
+.happy {
+    font-family: "Indie Flower", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/*parallax imaging for the page*/
+#intro{
+    background-image: url("../img/handlebars.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#verse1{
+    background-image: url("../img/handlebarsv2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#chorus1{
+    background-image: url("../img/trumpet-solo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#verse2{
+    background-image: url("../img/car.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#chorus2{
+    background-image: url("../img/microphone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#verse3{
+    background-image: url("../img/corporate2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#chorus3{
+    background-image: url("../img/climax2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*Font for the second and third verse. Becomes very corporate and capitalist.*/
+.corporate {
+    font-family: "Roboto Flex", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0,
+            "wdth" 100,
+            "GRAD" 0,
+            "XOPQ" 96,
+            "XTRA" 468,
+            "YOPQ" 79,
+            "YTAS" 750,
+            "YTDE" -203,
+            "YTFI" 738,
+            "YTLC" 514,
+            "YTUC" 712;
+}
+/*Font for the last chorus. Very aggressive.*/
+#climax {
+    font-family: "Bebas Neue", serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;/*Added letter spacing to make the type easier to read and still have weight.*/
+}
+#outro{
+    font-family: "Shadows Into Light", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+
+
