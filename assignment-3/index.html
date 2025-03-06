@@ -1,0 +1,178 @@
+<!--Jelly Belly Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/index.js" defer></script>
+<!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Jelly Belly</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/jelly-belly-logo-png-transparent.png" alt="jelly belly logo">
+        </div>
+        <h1>Jelly Belly</h1>
+        <nav>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact-form">Contact Us</a></li>
+                <li><a href="#flavour-form">Flavour Suggestion</a></li>
+            </menu>
+        </nav>
+    </header>
+<!--Gallery of flavours. Will include max of 10. Add hover effect around the specifc flavour and product card. Using a slider to move through the images and descriptions -->
+    <section id="gallery">
+        <h3>Flavours</h3>
+            <div class="slideshow">
+                <div class="contents">
+                    <div class="images">
+                        <h3 class="flavour">Very Cherry</h3>
+                        <p class="description">Created with real cherry juice to seem like it came right from a tree.</p> <!--cherry desc (R)-->
+                        <img class="flavour-image" src="img/cherry.png" alt="red jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Orange</h3>
+                        <p class="description">The perfect way to wake up your taste buds. Each flavored with real orange puree for a sweet citrus treat.</p> <!--orange desc (O)-->
+                        <img class="flavour-image" src="img/orange.png" alt="orange jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Sour Lemon</h3>
+                        <p class="description">This bean packs extra pucker power. Real lemon puree' delivers its special tasty tartness.</p> <!--sour lemon desc (Y)-->
+                        <img class="flavour-image" src="img/sour-lemon.png" alt="yellow jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Kiwi</h3>
+                        <p class="description">A sweet and exotic taste made with flavorings of real kiwifruit.</p> <!--green desc (G)-->
+                        <img class="flavour-image" src="img/kiwi.png" alt="green jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Watermelon</h3>
+                        <p class="description">A sweet sensation that's green on the outside and red on the inside. Flavored with real watermelon juice to be delicious inside and out.</p> <!--watermelon desc (DG)-->
+                        <img class="flavour-image" src="img/watermelon.png" alt="dark green jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Blue Raspberry</h3>
+                        <p class="description">Enjoy the taste of fresh-picked raspberry in a beautiful blue hue.</p> <!--blue raspberry desc (B)-->
+                        <img class="flavour-image" src="img/blue-raspberry.png" alt="blue jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Jewel Blueberry</h3>
+                        <p class="description">A beautifully sparkling bean flavored with real blueberry puree for a taste that bursts with flavor.</p> <!--jewel blueberry desc (I)-->
+                        <img class="flavour-image" src="img/jewel-blueberry.png" alt="indigo jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Wild Blackberry</h3>
+                        <p class="description">Deep and fruity flavor that tastes like it came right from the bush. Flavored with real blackberry puree.</p> <!--wild blackberry desc (V)-->
+                        <img class="flavour-image" src="img/wild-blackberry.png" alt="violet jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Bubblegum</h3>
+                        <p class="description">This bean has everything but the bubble! Taking a trip down memory lane has never tasted so good.</p> <!--bubblegum  (Pi)-->
+                        <img class="flavour-image" src="img/bubblegum.png" alt="pink jelly bean">
+                    </div>
+                    <div>
+                        <h3 class="flavour">Tutti Fruitti</h3>
+                        <p class="description">This most beloved bean is a unique and delicious combination of fruity flavors.</p> <!--tutti fruitti desc (L Pi)-->
+                        <img class="flavour-image" src="img/tutti-fruitti.png" alt="light pink jelly bean">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="history">
+        <h2>History</h2>
+        <p>Handcrafted for seven generations with only the finest ingredients. See why it takes 7 - 14 days to make a Jelly Belly jelly bean.</p>
+    </section>
+    <div class="forms">
+        <!--Basic contact us form. Includes first and last name, email address, message with a max of 500 characters, and submit and reset buttons-->
+        <form id="contact-form">
+            <fieldset id="contact-info">
+                <legend>Contact Us</legend>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <p><label for="message">Message</label></p>
+                    <textarea id="message" name="message" rows="10" cols="50">Enter your message</textarea>
+                </div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        <!--Submit a flavour form. Contains first and last name, a written description about the flavour, radio buttons for specific aspects of the flavour (colour type: solid, mixed, multi-->
+        <form id="flavour-form">
+            <!--Portion of form for contact information of sender -->
+            <fieldset>
+                <legend>Submit a Flavour</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="flavEmail">Email Address</label>
+                    <input type="email" id="flavEmail" name="flavEmail">
+                </div>
+                <!--Portion of form for flavour descriptors-->
+                <label for="flavName">Flavour Name</label>
+                <input type="text" id="flavName" name="flavName">
+                <!--Radio Buttons-->
+                <div>
+                    <h5>Flavour Colour:</h5>
+                        <label for="solid">Solid</label>
+                        <input type="radio" id="solid" name="flavColour" value="Solid">
+                        <label for="mixed">Mixed</label>
+                        <input type="radio" id="mixed" name="flavColour" value="Mixed">
+                        <label for="multi">Multi-Coloured</label>
+                        <input type="radio" id="multi" name="flavColour" value="Multi-Coloured">
+                </div>
+                <div>
+                    <h5>Flavour Type:</h5>
+                        <label for="fruit">Fruit</label>
+                        <input type="radio" id="fruit" name="flavType" value="Fruit">
+                        <label for="smoothie">Smoothie</label>
+                        <input type="radio" id="smoothie" name="flavType" value="Smoothie">
+                        <label for="drink">Drink</label>
+                        <input type="radio" id="drink" name="flavType" value="Drink">
+                        <label for="sour">Sour</label>
+                        <input type="radio" id="sour" name="flavType" value="Sour">
+                        <label for="candy">Candy</label>
+                        <input type="radio" id="candy" name="flavType" value="Candy">
+                </div>
+                <!--message box for flavour description-->
+                <div id="descHeader">
+                    <p><label for="flavDesc">Describe Your Flavour</label></p>
+                    <textarea id="flavDesc" name="FlavDesc" rows="10" cols="50">Enter description here</textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+<footer class="footer">
+    <nav>
+        <menu>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact-form">Contact Us</a></li>
+            <li><a href="#flavour-form">Flavour Suggestion</a></li>
+        </menu>
+    </nav>
+</footer>
+</body>
+</html>
