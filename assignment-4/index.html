@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Assignment 4</title>
+    <meta name="description" content="Recreating a webpage based on an image">
+    <!--Linking custom font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--Linking CSS sheet-->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <!--logo container-->
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="lorem ipsum logo"></a>
+        </div>
+        <!--desktop nav bar-->
+        <div class="nav-bar">
+            <nav>
+                <menu>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html/#rowTwo">About</a></li>
+                    <li><a href="index.html/#contact-form">Contact</a></li>
+                </menu>
+            </nav>
+        </div>
+        <!--hamburger menu, mobile only-->
+        <div class="mobile-nav">
+            <input id="menu" type="checkbox">
+            <label for="menu"></label>
+                <span></span>
+                <span></span>
+                <span></span>
+            <div id="burgerLinks">
+                <a href="index.html">Home</a>
+                <a href="index.html/#rowTwo">About</a>
+                <a href="index.html/#contact-form">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!--masthead container. Will have the funky arrow in it-->
+    <div class="masthead">
+        <div class="mask">
+            <h1>Assignment 4</h1>
+            <!--drop down arrow-->
+            <div class="arrow">
+            </div>
+        </div>
+    </div>
+    <main>
+        <!--call to action section-->
+        <section class="sectionOne">
+            <h2>Row One Title</h2>
+            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+        <section class="sectionTwo">
+            <!--cta div, text needs to be overtop of images. Use mask for images-->
+            <div class="cta">
+                <div class="mask">
+                    <h3>CTA One</h3>
+                    <h3>CTA Two</h3>
+                    <img src="./images/10.jpg" alt="train station">
+                    <img src="./images/7.jpg" alt="fall shoreline">
+                </div>
+            </div>
+            <h2 id="rowTwo">Row Two</h2>
+            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+       <!--adding a div to include a background color for the portion of the clip path that doesn't get clipped-->
+        <div class="sectionThreeContainer">
+            <section class="sectionThree">
+                <h2>Row Three</h2>
+                <!--hover section-->
+                <!--brush stroke for first button-->
+                <div class="button">
+                    <button id="hover-btn1" type="button">Hover One</button>
+                    <!--cool glow effect for the second button-->
+                    <button id="hover-btn2" type="button">Hover Two</button>
+                </div>
+            </section>
+        </div>
+        <div id="contact-form">
+            <form>
+                <label for="firstName"></label>
+                <input id="firstName" type="text" placeholder="First Name">
+                <label for="lastName"></label>
+                <input id="lastName" type="text" placeholder="Last Name"><br>
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Email"><br>
+                <label for="message"></label>
+                <textarea id="message" placeholder="Message" rows="5" cols="40"></textarea><br>
+                <button id=submit type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+        <footer>
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="lorem ipsum logo">
+            </div>
+            <h5>Assignment By: Jamie MacDonald</h5>
+    </footer>
+</body>
+</html>
